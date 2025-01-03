@@ -1,3 +1,5 @@
+import com.pliniodev.src.plugins.MainGradlewPlugin
+
 plugins {
     `android-library`
     `kotlin-android`
