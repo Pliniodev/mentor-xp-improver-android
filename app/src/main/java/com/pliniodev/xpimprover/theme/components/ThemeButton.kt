@@ -1,4 +1,4 @@
-package com.pliniodev.experimenting.theme.components
+package com.pliniodev.xpimprover.theme.components
 
 import androidx.compose.foundation.background
 import androidx.compose.material3.Button

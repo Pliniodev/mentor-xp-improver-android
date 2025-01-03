@@ -1,4 +1,4 @@
-package com.pliniodev.experimenting.screens
+package com.pliniodev.xpimprover.screens
 
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.fillMaxSize
@@ -9,9 +9,9 @@ import cafe.adriel.voyager.core.registry.rememberScreen
 import cafe.adriel.voyager.core.screen.Screen
 import cafe.adriel.voyager.navigator.LocalNavigator
 import cafe.adriel.voyager.navigator.currentOrThrow
-import com.pliniodev.experimenting.navigation.SharedScreen
-import com.pliniodev.experimenting.theme.CustomSpacing
-import com.pliniodev.experimenting.theme.components.ThemeButton
+import com.pliniodev.xpimprover.navigation.SharedScreen
+import com.pliniodev.xpimprover.theme.CustomSpacing
+import com.pliniodev.xpimprover.theme.components.ThemeButton
 
 internal object HomeScreen : Screen {
 

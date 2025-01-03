@@ -9,7 +9,7 @@ plugins {
 }
 
 android {
-    namespace = "com.pliniodev.experimenting"
+    namespace = "com.pliniodev.xpimprover"
     compileSdk = ProjectConfig.compileSdk
     defaultConfig {
         applicationId = ProjectConfig.appId

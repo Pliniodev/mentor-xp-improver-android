@@ -1,4 +1,4 @@
-package com.pliniodev.experimenting.resources
+package com.pliniodev.xpimprover.resources
 
 import cafe.adriel.lyricist.LyricistStrings
 

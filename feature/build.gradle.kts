@@ -8,7 +8,7 @@ plugins {
 apply<MainGradlewPlugin>()
 
 android {
-    namespace = "com.pliniodev.experimenting.feature"
+    namespace = "com.pliniodev.xpimprover.feature"
 }
 
 dependencies {

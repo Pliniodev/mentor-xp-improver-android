@@ -13,7 +13,7 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "Experimenting"
+rootProject.name = "MentorXpImprover"
 include(":app")
 include(":feature")
 include(":core:navigation")
