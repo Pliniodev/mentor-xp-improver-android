@@ -7,6 +7,6 @@ import cafe.adriel.voyager.core.screen.Screen
 class DogsHomeScreen : Screen {
     @Composable
     override fun Content() {
-        Text(text = "Feature Home Screen")
+        Text(text = "Feature Dogs Home Screen")
     }
 }
