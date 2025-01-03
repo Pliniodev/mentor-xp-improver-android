@@ -14,7 +14,6 @@ dependencyResolutionManagement {
 }
 
 rootProject.name = "MentorXpImprover"
-include(":app")
-include(":feature")
-include(":core:navigation")
+apply(from = "includes.gradle.kts")
+
  
