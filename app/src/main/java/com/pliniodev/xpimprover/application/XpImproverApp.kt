@@ -2,8 +2,8 @@ package com.pliniodev.xpimprover.application
 
 import android.app.Application
 import cafe.adriel.voyager.core.registry.ScreenRegistry
-import com.pliniodev.feature.di.featureModule
-import com.pliniodev.feature.di.featureScreenModule
+import com.pliniodev.features.dogs.di.dogsModule
+import com.pliniodev.features.dogs.di.dogsScreenModule
 import com.pliniodev.xpimprover.di.appModule
 import org.koin.android.ext.koin.androidContext
 import org.koin.android.ext.koin.androidLogger
@@ -19,12 +19,12 @@ class XpImproverApp : Application() {
             androidContext(this@XpImproverApp)
             modules(
                 appModule,
-                featureModule,
+                dogsModule,
             )
         }
 
         ScreenRegistry {
-            featureScreenModule()
+            dogsScreenModule()
         }
     }
 }

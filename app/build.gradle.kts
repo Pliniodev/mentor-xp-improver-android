@@ -66,7 +66,7 @@ android {
 
 dependencies {
     // features
-    implementation(project(":feature"))
+    implementation(project(":features:dogs"))
     implementation(project(":core:navigation"))
 
     // compose

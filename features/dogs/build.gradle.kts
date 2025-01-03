@@ -8,7 +8,7 @@ plugins {
 apply<MainGradlewPlugin>()
 
 android {
-    namespace = "com.pliniodev.xpimprover.feature"
+    namespace = "com.pliniodev.xpimprover.dogs"
 }
 
 dependencies {
