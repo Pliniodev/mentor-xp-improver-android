@@ -1,4 +1,4 @@
-package com.pliniodev.experimenting.theme
+package com.pliniodev.xpimprover.theme
 
 import androidx.compose.ui.graphics.Color
 

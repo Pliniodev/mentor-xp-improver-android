@@ -1,4 +1,4 @@
-package com.pliniodev.experimenting.di
+package com.pliniodev.xpimprover.di
 
 import org.koin.dsl.module
 

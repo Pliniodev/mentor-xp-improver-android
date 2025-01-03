@@ -1,4 +1,4 @@
-package com.pliniodev.experimenting.navigation
+package com.pliniodev.xpimprover.navigation
 
 import cafe.adriel.voyager.core.registry.ScreenProvider
 

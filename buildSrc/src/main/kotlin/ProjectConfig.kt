@@ -1,5 +1,5 @@
 object ProjectConfig {
-    const val appId = "com.pliniodev.experimenting"
+    const val appId = "com.pliniodev.xpimprover"
     const val compileSdk = 34
     const val minSdk = 24
     const val targetSdk = 34

@@ -8,7 +8,7 @@ plugins {
 apply<MainGradlewPlugin>()
 
 android {
-    namespace = "com.pliniodev.experimenting.core.navigation"
+    namespace = "com.pliniodev.xpimprover.core.navigation"
 }
 
 dependencies {
