@@ -2,6 +2,7 @@ package com.pliniodev.xpimprover.screens
 
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.fillMaxSize
+import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.padding
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
@@ -25,7 +26,10 @@ internal object HomeScreen : Screen {
                 .fillMaxSize()
                 .padding(CustomSpacing.medium),
         ) {
-            ThemeButton(text = "Feature 1") {
+            ThemeButton(
+                text = "Feature Dogs",
+                modifier = Modifier.fillMaxWidth(),
+            ) {
                 navigator.push(postListScreen)
             }
         }
