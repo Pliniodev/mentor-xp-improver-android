@@ -1,4 +1,4 @@
-package com.pliniodev.features.dogs.resources
+package com.pliniodev.features.dogs.ui.resources
 
 import cafe.adriel.lyricist.LyricistStrings
 

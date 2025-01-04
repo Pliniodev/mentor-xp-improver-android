@@ -1,4 +1,4 @@
-package com.pliniodev.features.dogs.ui
+package com.pliniodev.features.dogs.ui.screens
 
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
