@@ -1,7 +1,7 @@
 package com.pliniodev.features.dogs.di
 
 import cafe.adriel.voyager.core.registry.screenModule
-import com.pliniodev.features.dogs.ui.screens.DogsHomeScreen
+import com.pliniodev.features.dogs.ui.screens.home.DogsHomeScreen
 import com.pliniodev.xpimprover.navigation.SharedScreen
 
 /**
