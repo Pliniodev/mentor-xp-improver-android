@@ -11,6 +11,9 @@ import okhttp3.logging.HttpLoggingInterceptor
 import org.koin.core.qualifier.named
 import org.koin.dsl.module
 import retrofit2.Retrofit
+import java.util.concurrent.TimeUnit
+
+private const val CONNECTION_TIMEOUT = 60000L
 
 val networkModule = module {
     single {
@@ -25,6 +28,8 @@ val networkModule = module {
             level = HttpLoggingInterceptor.Level.BODY
         }
         OkHttpClient.Builder()
+            .connectTimeout(CONNECTION_TIMEOUT, TimeUnit.MILLISECONDS)
+            .readTimeout(CONNECTION_TIMEOUT, TimeUnit.MILLISECONDS)
             .addInterceptor(logging)
             .build()
     }

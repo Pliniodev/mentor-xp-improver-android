@@ -81,7 +81,7 @@ compose = ["ui", "ui-graphics", "ui-tooling", "ui-tooling-preview", "activity-co
 android-test = ["androidx-test-ext-junit", "espresso-core", "ui-test-junit4"]
 ktx = ["core-ktx", "lifecycle-runtime-ktx"]
 lyricist = ["lyricist", "lyricist-processor"]
-voyager = ["voyager-navigator", "voyager-screenModel", "voyager-koin"]
+voyager = ["voyager-navigator", "voyager-screenModel", "voyager-koin", "voyager-core"]
 koin = ["koin-core", "koin-compose", "koin-android"]
 
 #FIX-ME find a way to use libs.plugins on buildSrc
