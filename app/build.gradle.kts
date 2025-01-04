@@ -5,7 +5,6 @@ plugins {
     id("com.android.application")
     id("org.jetbrains.kotlin.android")
     id("org.jlleitschuh.gradle.ktlint")
-    alias(libs.plugins.jetbrainsCompose)
     id("com.google.devtools.ksp") version libs.versions.ksp
 }
 
