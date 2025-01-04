@@ -19,7 +19,7 @@ val networkModule = module {
             isLenient = true
         }
     }
-    
+
     single {
         val logging = HttpLoggingInterceptor().apply {
             level = HttpLoggingInterceptor.Level.BODY
@@ -28,18 +28,15 @@ val networkModule = module {
             .addInterceptor(logging)
             .build()
     }
-    
+
     // region dogs
-    
     single(named(InjectionTags.dogsRetrofit)) {
         val json: Json = get()
         val client: OkHttpClient = get()
         BuildRetrofit(json)
             .build(apiBaseUrl = BaseUrls.dogCeo, client)
     }
-    
     // endregion
-    
     // region custom
     // examples if you need to create a custom client and retrofit
     single(named("CustomHttpClient")) {
@@ -52,7 +49,6 @@ val networkModule = module {
             }
             .build()
     }
-    
     single(named("CustomRetrofit")) {
         val json: Json = get(named("DefaultJson"))
         val client: OkHttpClient = get(named("CustomHttpClient"))
@@ -62,6 +58,5 @@ val networkModule = module {
             .addConverterFactory(json.asConverterFactory("application/json".toMediaType()))
             .build()
     }
-    
     //endregion
 }
