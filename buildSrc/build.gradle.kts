@@ -15,6 +15,7 @@ dependencies {
     implementation(libs.build.gradle)
     implementation(libs.ktlint.gradle)
     implementation(libs.ksp)
+    implementation(libs.compose.gradle.plugin) 
 }
 
 val compileKotlin: KotlinCompile by tasks

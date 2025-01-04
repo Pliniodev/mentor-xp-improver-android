@@ -3,8 +3,8 @@ import com.pliniodev.src.plugins.MainGradlewPlugin
 plugins {
     `android-library`
     `kotlin-android`
-    alias(libs.plugins.jetbrainsCompose)
-    id("com.google.devtools.ksp") version libs.versions.ksp
+    alias(libs.plugins.ksp)
+    kotlin("plugin.serialization") version libs.versions.kotlin
 }
 
 apply<MainGradlewPlugin>()
@@ -36,6 +36,9 @@ dependencies {
 
     // koin
     implementation(libs.bundles.koin)
+
+    // kotlin serialization
+    implementation(libs.kotlin.serialization.json)
 
     // test
     testImplementation(libs.junit)
