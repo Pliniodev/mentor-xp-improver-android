@@ -13,7 +13,8 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "MentorXpImprover"
-apply(from = "includes.gradle.kts")
+enableFeaturePreview("TYPESAFE_PROJECT_ACCESSORS")
 
- 
+rootProject.name = "MentorXpImprover"
+
+apply(from = "includes.gradle.kts")

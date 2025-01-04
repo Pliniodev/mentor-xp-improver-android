@@ -14,7 +14,6 @@ dependencies {
     implementation(libs.retrofit)
     implementation(libs.retrofit.converter)
     // kotlin serialization
-//    implementation(libs.kotlin.serialization.core)
     implementation(libs.kotlin.serialization.json)
     // okhttp
     implementation(libs.okhttp)

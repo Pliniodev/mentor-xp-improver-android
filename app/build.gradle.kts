@@ -1,5 +1,4 @@
 import com.pliniodev.src.ProjectConfig
-import com.pliniodev.src.projects
 import org.jlleitschuh.gradle.ktlint.reporter.ReporterType
 
 plugins {
@@ -68,9 +67,9 @@ android {
 
 dependencies {
     // features
-    implementation(projects.featuresDogs)
-    implementation(projects.coreNavigation)
-    implementation(projects.coreNetwork)
+    implementation(projects.features.dogs)
+    implementation(projects.core.navigation)
+    implementation(projects.core.network)
 
     // compose
     implementation(libs.bundles.compose)

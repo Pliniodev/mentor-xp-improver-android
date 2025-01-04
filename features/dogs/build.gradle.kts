@@ -14,7 +14,9 @@ android {
 }
 
 dependencies {
-    implementation(project(":core:navigation"))
+    // projects
+    implementation(projects.core.network)
+    implementation(projects.core.navigation)
 
     // compose
     implementation(libs.bundles.compose)
