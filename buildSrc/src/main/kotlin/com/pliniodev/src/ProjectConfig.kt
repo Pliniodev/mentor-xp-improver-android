@@ -1,3 +1,5 @@
+package com.pliniodev.src
+
 object ProjectConfig {
     const val appId = "com.pliniodev.xpimprover"
     const val compileSdk = 34

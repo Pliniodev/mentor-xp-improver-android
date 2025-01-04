@@ -1,6 +1,6 @@
 package com.pliniodev.src.plugins
 
-import ProjectConfig
+import com.pliniodev.src.ProjectConfig
 import com.android.build.gradle.LibraryExtension
 import org.gradle.api.JavaVersion
 import org.gradle.api.Plugin

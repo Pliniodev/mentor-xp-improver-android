@@ -2,7 +2,7 @@ import com.pliniodev.src.plugins.CoreGradlewPlugin
 
 plugins {
     kotlin("jvm")
-    alias(libs.plugins.kotlinSerialization) apply false
+    kotlin("plugin.serialization") version libs.versions.kotlin
 }
 
 apply<CoreGradlewPlugin>()
@@ -14,8 +14,11 @@ dependencies {
     implementation(libs.retrofit)
     implementation(libs.retrofit.converter)
     // kotlin serialization
-    implementation(libs.kotlin.serialization.core)
+//    implementation(libs.kotlin.serialization.core)
     implementation(libs.kotlin.serialization.json)
+    // okhttp
+    implementation(libs.okhttp)
+    implementation(libs.okhttp.logging.interceptor)
     // test
     testImplementation(libs.junit)
 }
