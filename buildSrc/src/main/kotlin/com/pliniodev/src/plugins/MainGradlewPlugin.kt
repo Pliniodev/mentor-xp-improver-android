@@ -1,3 +1,6 @@
+package com.pliniodev.src.plugins
+
+import com.pliniodev.src.ProjectConfig
 import com.android.build.gradle.LibraryExtension
 import org.gradle.api.JavaVersion
 import org.gradle.api.Plugin
@@ -6,6 +9,9 @@ import org.jetbrains.kotlin.gradle.dsl.KotlinAndroidProjectExtension
 import org.jlleitschuh.gradle.ktlint.KtlintExtension
 import org.jlleitschuh.gradle.ktlint.reporter.ReporterType
 
+/**
+ * Use this for Android modules
+ */
 class MainGradlewPlugin : Plugin<Project> {
     override fun apply(target: Project) {
         applyPlugins(target)
