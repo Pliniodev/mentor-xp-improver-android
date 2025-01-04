@@ -27,6 +27,9 @@ dependencies {
     implementation(libs.material3)
     implementation(libs.ksp)
 
+    // retrofit
+    implementation(libs.retrofit)
+
     // lyricist
     implementation(libs.bundles.lyricist)
     ksp(libs.lyricist.processor)
