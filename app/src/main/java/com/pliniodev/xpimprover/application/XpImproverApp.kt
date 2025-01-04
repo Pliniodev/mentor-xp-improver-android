@@ -2,6 +2,7 @@ package com.pliniodev.xpimprover.application
 
 import android.app.Application
 import cafe.adriel.voyager.core.registry.ScreenRegistry
+import com.pliniodev.core.network.di.networkModule
 import com.pliniodev.features.dogs.di.dogsModule
 import com.pliniodev.features.dogs.di.dogsScreenModule
 import com.pliniodev.xpimprover.di.appModule
@@ -20,6 +21,7 @@ class XpImproverApp : Application() {
             modules(
                 appModule,
                 dogsModule,
+                networkModule,
             )
         }
 
