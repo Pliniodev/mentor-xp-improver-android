@@ -17,6 +17,7 @@ dependencies {
     // projects
     implementation(projects.core.network)
     implementation(projects.core.navigation)
+    implementation(projects.common.components)
 
     // compose
     implementation(libs.bundles.compose)
