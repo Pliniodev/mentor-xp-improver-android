@@ -10,9 +10,9 @@ import cafe.adriel.voyager.core.registry.rememberScreen
 import cafe.adriel.voyager.core.screen.Screen
 import cafe.adriel.voyager.navigator.LocalNavigator
 import cafe.adriel.voyager.navigator.currentOrThrow
+import com.pliniodev.xpimprover.common.components.Button
+import com.pliniodev.xpimprover.common.theme.CustomSpacing
 import com.pliniodev.xpimprover.navigation.SharedScreen
-import com.pliniodev.xpimprover.theme.CustomSpacing
-import com.pliniodev.xpimprover.theme.components.ThemeButton
 
 internal object HomeScreen : Screen {
 
@@ -26,7 +26,7 @@ internal object HomeScreen : Screen {
                 .fillMaxSize()
                 .padding(CustomSpacing.medium),
         ) {
-            ThemeButton(
+            Button(
                 text = "Feature Dogs",
                 modifier = Modifier.fillMaxWidth(),
             ) {
