@@ -1,4 +1,4 @@
-package com.pliniodev.xpimprover.theme.components
+package com.pliniodev.xpimprover.common.components
 
 import androidx.compose.material3.Button
 import androidx.compose.material3.ButtonDefaults
@@ -8,7 +8,7 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 
 @Composable
-public fun ThemeButton(
+public fun Button(
     text: String,
     modifier: Modifier = Modifier,
     onClick: () -> Unit,

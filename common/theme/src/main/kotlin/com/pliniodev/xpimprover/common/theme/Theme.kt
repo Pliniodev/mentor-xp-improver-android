@@ -1,4 +1,4 @@
-package com.pliniodev.xpimprover.theme
+package com.pliniodev.xpimprover.common.theme
 
 import android.app.Activity
 import android.os.Build
