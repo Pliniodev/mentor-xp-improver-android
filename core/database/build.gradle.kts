@@ -44,8 +44,8 @@ ksp {
     arg("lyricist.generateStringsProperty", "true")
 }
 
-//configurations.all {
+// configurations.all {
 //    resolutionStrategy {
 //        force("org.jetbrains:annotations:23.0.0")
 //    }
-//}
+// }
