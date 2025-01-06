@@ -7,17 +7,17 @@ import androidx.room.OnConflictStrategy
 import androidx.room.Query
 
 @Dao
-interface UserDao {
+internal interface UserDao {
 
     @Insert(onConflict = OnConflictStrategy.REPLACE)
-    suspend fun insertUser(user: User)
+    suspend fun insertUser(userEntity: UserEntity)
 
     @Query("SELECT * FROM users")
-    suspend fun getAllUsers(): List<User>
+    suspend fun getAllUsers(): List<UserEntity>
 
-    @Query("SELECT * FROM users WHERE id = :userId")
-    suspend fun getUserById(userId: Int): User?
+    @Query("SELECT * FROM users WHERE name = :name")
+    suspend fun getUserByName(name: String): UserEntity?
 
     @Delete
-    suspend fun deleteUser(user: User)
+    suspend fun deleteUser(userEntity: UserEntity)
 }
