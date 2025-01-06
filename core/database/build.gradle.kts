@@ -29,7 +29,9 @@ dependencies {
     implementation(libs.kotlin.serialization.json)
 
     // room
-    implementation(libs.bundles.room)
+    implementation(libs.bundles.room) {
+        exclude(group = "com.intellij", module = "annotations")
+    }
 
     // test
     testImplementation(libs.junit)
@@ -41,3 +43,9 @@ ksp {
     arg("lyricist.internalVisibility", "true")
     arg("lyricist.generateStringsProperty", "true")
 }
+
+//configurations.all {
+//    resolutionStrategy {
+//        force("org.jetbrains:annotations:23.0.0")
+//    }
+//}
