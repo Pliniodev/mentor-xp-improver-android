@@ -69,6 +69,7 @@ dependencies {
     implementation(projects.features.dogs)
     implementation(projects.core.navigation)
     implementation(projects.core.network)
+    implementation(projects.core.database)
     implementation(projects.common.theme)
     implementation(projects.common.components)
 
