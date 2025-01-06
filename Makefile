@@ -8,3 +8,8 @@ help:
 .PHONY: lint
 lint: ## Runs Clean and ktlintFormat and ktlintCheck tasks
 	./gradlew clean ktlintFormat ktlintCheck
+	
+create-module:
+	mkdir -p features/$(name)
+	cp features/dogs/build.gradle.kts features/$(name)/build.gradle.kts
+	echo "\ninclude(\":features:$(name)\")" >> includes.gradle.kts
