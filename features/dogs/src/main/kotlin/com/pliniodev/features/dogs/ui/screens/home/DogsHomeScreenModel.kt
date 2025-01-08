@@ -3,6 +3,7 @@ package com.pliniodev.features.dogs.ui.screens.home
 import cafe.adriel.voyager.core.model.StateScreenModel
 import cafe.adriel.voyager.core.model.screenModelScope
 import com.pliniodev.features.dogs.domain.DogsRepository
+import com.pliniodev.xpimprover.common.components.uiState.UiState
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 

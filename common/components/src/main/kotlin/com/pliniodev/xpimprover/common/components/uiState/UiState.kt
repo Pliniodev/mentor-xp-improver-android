@@ -1,4 +1,4 @@
-package com.pliniodev.features.dogs.ui.screens.home
+package com.pliniodev.xpimprover.common.components.uiState
 
 sealed class UiState<out T> {
     data object Loading : UiState<Nothing>()
