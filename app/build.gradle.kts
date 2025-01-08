@@ -67,6 +67,7 @@ android {
 dependencies {
     // features
     implementation(projects.features.dogs)
+    implementation(projects.features.userDBCrud)
     implementation(projects.core.navigation)
     implementation(projects.core.network)
     implementation(projects.core.database)

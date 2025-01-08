@@ -10,17 +10,35 @@ plugins {
 apply<MainGradlewPlugin>()
 
 android {
-    namespace = "com.pliniodev.xpimprover.core.database"
+    namespace = "com.pliniodev.xpimprover.features.userdbcrud"
 }
 
 dependencies {
+    // projects
+    implementation(projects.core.network)
+    implementation(projects.core.navigation)
+    implementation(projects.common.components)
+    implementation(projects.common.theme)
+    implementation(projects.core.database)
+
+    // compose
+    implementation(libs.bundles.compose)
+    implementation(platform(libs.compose.bom))
+
     // core
     implementation(libs.bundles.ktx)
+    implementation(libs.material3)
     implementation(libs.ksp)
+
+    // retrofit
+    implementation(libs.retrofit)
 
     // lyricist
     implementation(libs.bundles.lyricist)
     ksp(libs.lyricist.processor)
+
+    // voyager
+    implementation(libs.bundles.voyager)
 
     // koin
     implementation(libs.bundles.koin)
@@ -28,25 +46,15 @@ dependencies {
     // kotlin serialization
     implementation(libs.kotlin.serialization.json)
 
-    // room
-    implementation(libs.bundles.room) {
-        exclude(group = "com.intellij", module = "annotations")
-    }
-    ksp(libs.room.compiler)
-
     // test
     testImplementation(libs.junit)
     androidTestImplementation(platform(libs.compose.bom))
     androidTestImplementation(libs.bundles.android.test)
+    debugImplementation(libs.ui.tooling)
+    debugImplementation(libs.ui.test.manifest)
 }
 
 ksp {
     arg("lyricist.internalVisibility", "true")
     arg("lyricist.generateStringsProperty", "true")
 }
-
-// configurations.all {
-//    resolutionStrategy {
-//        force("org.jetbrains:annotations:23.0.0")
-//    }
-// }
