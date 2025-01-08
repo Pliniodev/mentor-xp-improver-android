@@ -7,6 +7,8 @@ import com.pliniodev.features.dogs.di.dogsModule
 import com.pliniodev.features.dogs.di.dogsScreenModule
 import com.pliniodev.xpimprover.core.database.di.databaseModule
 import com.pliniodev.xpimprover.di.appModule
+import com.pliniodev.xpimprover.features.userDbCrud.di.userCrudModule
+import com.pliniodev.xpimprover.features.userDbCrud.di.userCrudScreenModule
 import org.koin.android.ext.koin.androidContext
 import org.koin.android.ext.koin.androidLogger
 import org.koin.core.context.GlobalContext.startKoin
@@ -22,6 +24,7 @@ class XpImproverApp : Application() {
             modules(
                 appModule,
                 dogsModule,
+                userCrudModule,
                 networkModule,
                 databaseModule,
             )
@@ -29,6 +32,7 @@ class XpImproverApp : Application() {
 
         ScreenRegistry {
             dogsScreenModule()
+            userCrudScreenModule()
         }
     }
 }
