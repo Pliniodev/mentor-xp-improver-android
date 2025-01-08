@@ -10,7 +10,7 @@ plugins {
 apply<MainGradlewPlugin>()
 
 android {
-    namespace = "com.pliniodev.xpimprover.features.meuModulo"
+    namespace = "com.pliniodev.xpimprover.features.comments"
 }
 
 dependencies {
