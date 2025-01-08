@@ -94,7 +94,7 @@ ktx = ["core-ktx", "lifecycle-runtime-ktx"]
 lyricist = ["lyricist", "lyricist-processor"]
 voyager = ["voyager-navigator", "voyager-screenModel", "voyager-koin", "voyager-core"]
 koin = ["koin-core", "koin-compose", "koin-android"]
-room = ["room-runtime", "room-compiler", "room-ktx"]
+room = ["room-runtime", "room-ktx"]
 
 #FIX-ME find a way to use libs.plugins on buildSrc
 [plugins]

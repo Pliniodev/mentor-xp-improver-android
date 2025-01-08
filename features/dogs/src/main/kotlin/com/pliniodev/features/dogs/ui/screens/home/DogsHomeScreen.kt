@@ -12,6 +12,7 @@ import cafe.adriel.voyager.core.screen.Screen
 import cafe.adriel.voyager.koin.getScreenModel
 import com.pliniodev.xpimprover.common.components.FullAsyncImage
 import com.pliniodev.xpimprover.common.components.Progress
+import com.pliniodev.xpimprover.common.components.uiState.UiState
 
 class DogsHomeScreen : Screen {
     @Composable
