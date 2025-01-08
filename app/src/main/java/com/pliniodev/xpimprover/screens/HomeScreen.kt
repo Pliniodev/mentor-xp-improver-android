@@ -1,6 +1,7 @@
 package com.pliniodev.xpimprover.screens
 
 import androidx.compose.foundation.layout.Column
+import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.padding
@@ -20,6 +21,7 @@ internal object HomeScreen : Screen {
     override fun Content() {
         val navigator = LocalNavigator.currentOrThrow
         val postListScreen = rememberScreen(SharedScreen.FeatureHome)
+        val userCrudScreen = rememberScreen(SharedScreen.UserCrudHome)
 
         Column(
             modifier = Modifier
@@ -31,6 +33,13 @@ internal object HomeScreen : Screen {
                 modifier = Modifier.fillMaxWidth(),
             ) {
                 navigator.push(postListScreen)
+            }
+            Spacer(modifier = Modifier.padding(top = CustomSpacing.medium))
+            Button(
+                text = "Feature UserCrud",
+                modifier = Modifier.fillMaxWidth(),
+            ) {
+                navigator.push(userCrudScreen)
             }
         }
     }
