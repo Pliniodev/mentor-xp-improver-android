@@ -4,7 +4,7 @@ import cafe.adriel.voyager.core.model.StateScreenModel
 import cafe.adriel.voyager.core.model.screenModelScope
 import com.pliniodev.xpimprover.common.components.uiState.UiState
 import com.pliniodev.xpimprover.core.database.domain.User
-import com.pliniodev.xpimprover.core.database.domain.UserCrudUseCase
+import com.pliniodev.xpimprover.features.userDbCrud.domain.UserCrudUseCase
 import kotlinx.coroutines.launch
 
 internal data class UserCrudState(
