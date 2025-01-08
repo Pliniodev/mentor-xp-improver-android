@@ -1,7 +1,8 @@
-package com.pliniodev.xpimprover.core.database.data
+package com.pliniodev.xpimprover.features.userDbCrud.data
 
+import com.pliniodev.xpimprover.core.database.data.UserDao
 import com.pliniodev.xpimprover.core.database.domain.User
-import com.pliniodev.xpimprover.core.database.domain.UserCrudUseCase
+import com.pliniodev.xpimprover.features.userDbCrud.domain.UserCrudUseCase
 
 internal class UserCrudUseCaseImpl(
     private val userDao: UserDao,

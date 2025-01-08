@@ -1,4 +1,6 @@
-package com.pliniodev.xpimprover.core.database.domain
+package com.pliniodev.xpimprover.features.userDbCrud.domain
+
+import com.pliniodev.xpimprover.core.database.domain.User
 
 interface UserCrudUseCase {
     suspend fun insertUser(user: User)
