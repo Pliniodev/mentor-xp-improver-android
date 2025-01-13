@@ -2,6 +2,7 @@ package com.pliniodev.src.plugins
 
 import org.gradle.api.Plugin
 import org.gradle.api.Project
+import org.gradle.api.tasks.compile.JavaCompile
 import org.jetbrains.kotlin.gradle.dsl.KotlinJvmProjectExtension
 import org.jlleitschuh.gradle.ktlint.KtlintExtension
 import org.jlleitschuh.gradle.ktlint.reporter.ReporterType
@@ -30,6 +31,9 @@ class CoreGradlewPlugin : Plugin<Project> {
     private fun configureKotlin(project: Project) {
         project.extensions.findByType(KotlinJvmProjectExtension::class.java)?.apply {
             jvmToolchain(17)
+        }
+        project.tasks.withType(JavaCompile::class.java).configureEach {
+            options.release.set(17)
         }
     }
 
